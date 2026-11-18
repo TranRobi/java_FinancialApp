@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Swing Application",
+            "request": "launch",
+            "mainClass": "hu.bme.personalfinance.Main",
+            "projectName": "personal-finance-tracker",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

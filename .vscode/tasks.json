@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Maven Build",
+            "type": "shell",
+            "command": "mvn clean compile",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$maven-compiler"]
+        },
+        {
+            "label": "Maven Package",
+            "type": "shell",
+            "command": "mvn clean package",
+            "group": "build"
+        },
+        {
+            "label": "Maven Test",
+            "type": "shell",
+            "command": "mvn test",
+            "group": "test"
+        }
+    ]
+}
