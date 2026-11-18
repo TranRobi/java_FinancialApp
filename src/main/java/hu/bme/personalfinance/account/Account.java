@@ -31,6 +31,11 @@ public class Account implements Serializable {
     public int hashCode() {
         return Objects.hash(name, type, currency);
     }
+
+    @Override
+    public String toString() {
+        return name + " (" + type + ", " + currency + ")";
+    }
     
     public String getName() {
         return name;
